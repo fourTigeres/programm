@@ -39,17 +39,7 @@
             </a>
           </div>
         </div>
-        <!--导航-->
-        <div class="tab" ref="navScrollref">
-          <ul class="tab-item">
-            <li> <router-link to="/index">首页</router-link></li>
-            <li> <router-link to="/goods">猫粮</router-link></li>
-            <li> <router-link to="/temai">特卖</router-link></li>
-            <li> <router-link to="/chaoping">罐头超市</router-link></li>
-            <li> <router-link to="/xinwang">潮品视频</router-link></li>
-            <li> <router-link to="/xinmiao">新喵课堂</router-link></li>
-          </ul>
-        </div>
+
       </div>
     </div>
     <!--头部结束-->
@@ -62,21 +52,7 @@
     data () {
       return {}
     },
-    created(){
-      this.navScroll()
-    },
-    methods:{
-      navScroll(){
-      this.$nextTick(() => {
 
-      new BScroll(this.$refs.navScrollref, {
-        scrollX: true,
-        click:true
-      })
-
-    })
-      }
-    }
   }
 </script>
 
@@ -113,7 +89,7 @@
     width 100%
     background-color white
     font-size (14 / r)
-    height (85 / r)
+    height (51 / r)
     position fixed
     top (60 / r)
     left 0
@@ -170,29 +146,7 @@
               margin (10 / r) (20 / r)
               width (25 / r)
               height (25 / r)
-      .tab
-        height (36 / r)
-        line-height (36 / r)
-        font-size (14 / r)
-        width 100%
-        border-1px(#eee)
-        .tab-item
-          display flex
-          width 120%
-          text-align center
-          li
-            flex 1
-            a
-              line-height (32/r)
-              display inline-block
-            .active
-              color #e73f85
-              border-bottom (2/r) solid #e73f85
-          .green
-            line-height (30 / r)
-            width 50%
-            display inline-block
-            border-bottom (3 / r) solid #459d36
+
 
   //头部结束
 

@@ -186,15 +186,7 @@
               </a>
             </li>
           </ul>
-
-
-
         </div>
-
-
-
-
-
         <!--以下是包裹div-->
       </div>
     </div>
@@ -223,18 +215,18 @@
 
         this.$nextTick(() => {
           if (!this.scroll) { // 如果不存在才创建, 并保存
-            this.scroll = new BScroll(this.$refs.goodsWrap, {
-              click: true
-            })
-
+              this.scroll = new BScroll(this.$refs.goodsWrap, {
+                click: true
+              })
           } else {
             //刷新scroll对象
             this.scroll.refresh()
           }
           if (!this.scrollg) { // 如果不存在才创建, 并保存
-            this.scrollg = new BScroll(this.$refs.goodsnavScrollref, {
-              scrollX: true,
-            })
+
+              this.scrollg = new BScroll(this.$refs.goodsnavScrollref, {
+                scrollX: true,
+              })
 
           } else {
             //刷新scroll对象

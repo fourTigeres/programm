@@ -210,7 +210,7 @@
             this.infos= this.firstPageMsg
             this.sponsors=this.firstPageMsg.sponsors.list
           }
-        },1200)
+        },1300)
 
         //动态时间
         var  tim =60
@@ -225,8 +225,6 @@
         //注意事项：BScroll 加在最外层的容器
         //设置改变一个容器的css是要用style的
         //vue获得元素节点通过$refs
-
-
           this.$nextTick(() => {
             if (!this.scroll) { // 如果不存在才创建, 并保存
               this.scrola = new BScroll(this.$refs.ContentFisrt, {
